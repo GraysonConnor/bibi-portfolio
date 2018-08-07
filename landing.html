@@ -3,11 +3,14 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="normalize.css">
     <link rel="stylesheet" href="landing.css">
-    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <title>Bibi Connor</title>
   </head>
   <body>
+    <a name="top"></a>
+    <div class="container">
    <header>
                             <!--Logo start-->
      <div class="logo">
@@ -25,9 +28,8 @@
      <h4>HEY.</h4>
 
      <p>I'm Bibi Connor, a web designer based out of Austin, Texas.</p>
-     <p>I was born with creativity in my blood, but I fell in love with design after discovering its influence in small business.</p>
-     <p>Since then, I've been chasing my fascination with intentional and communicative design. I have found that usability and<br>
-     adaptability lead to the most successful design campaigns.</p>
+     <p>I was born with creativity in my blood, but I fell in love with design after discovering its<br> influence in small business.</p>
+     <p>Since then, I've been chasing my fascination with intentional and communicative design. <br>I found that usability and adaptability lead to the most successful design campaigns.</p>
    </div>
    </div>
                             <!--About End-->
@@ -37,9 +39,9 @@
                             <!--Nav start-->
    <div class="nav">
      <ul>
-       <li><a href="#">View Resume</a></li>
-       <li><a href="#">Contact</a></li>
-       <li><a href="#">LinkedIn</a></li>
+       <li><div><a class="animated-button sandy-one" href="#">View Resume</a></div></li>
+       <li><div><a href="#">Contact</a></div></li>
+       <li><div><a href="https://www.linkedin.com/in/bibi-connor/">LinkedIn</a></div></li>
      </ul>
 
    </div>
@@ -49,19 +51,24 @@
                             <!--Projects Start-->
 
    <section class="projects">
-      <h3>Work</h3>
+      <h3>WORK</h3>
 
-      <div id="enveluv">
+
+
+      <div id="enveluv" align="center">
+        <object class="blocbox-wrapper" data="images/enveluv-wrapper.svg" type="image/svg+xml"></object>
         <h2>Enveluv</h2>
-        <p>Web application that helps connect<br>girls with each other through the lost<br>art of handwritten letters.</p>
-        <a href="#">Click here to view Case Study</a>
+        <p>Web application that helps connect girls with each other through the lost art of<br>handwritten letters.</p>
+        <a id="view-case-study" href="enveluv.html">VIEW CASE STUDY</a>
       </div>
 
-      <div id="blocbox">
+      <div id="blocbox" align="center">
+        <object class="blocbox-wrapper" data="images/blocbox-wrapper.svg" type="image/svg+xml"></object>
         <h2>Blocbox</h2>
-        <p>SaaS application that offers users a<br>simple way to store and share links,<br>photos, and notes all in one place.</p>
-        <a href="#">Click here to view Case Study</a>
+        <p>SaaS application that offers users a simple way to store and share links, photos,<br>and notes all in one place.</p>
+        <a id="view-case-study" href="blocbox.html">VIEW CASE STUDY</a>
       </div>
+
 
    </section>
 
@@ -69,16 +76,22 @@
 
                             <!--Footer Start-->
    <footer>
+     <div class="footer" align="center">
      <h3>It would make my day to hear from you!</h3>
      <h4>bibiaconn@gmail.com</h4>
-     <a href="#">LinkedIn</a>
-     <a href="#">Resume</a>
+    <ul>
+     <li><div class="footer-contact"><a href="https://www.linkedin.com/in/bibi-connor/">LinkedIn</a></div></li>
+     <li><div class="footer-contact"><a href="#">View Resume</a></div></li>
+    </ul>
+     <a id="scroll" href="#top">SCROLL TO TOP</a>
 
-     <a href="#">SCROLL TO TOP</a>
-
-     <h5>2018 BIBI A CONNOR LLC. ALL RIGHTS RESERVED.</h5>
+     <h5>&copy;<script>document.write(new Date().getFullYear())</script> BIBI A CONNOR LLC. ALL RIGHTS RESERVED.</h5>
+   </div>
    </footer>
                             <!--Footer End-->
+</div>
 
+  <script src="jquery-3.3.1.min.js"></script>
+  <script src="landing.js"></script>
   </body>
 </html>
